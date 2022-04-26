@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <script language="Javascript" type="text/javascript" >
+            document.write=("Hello World") ;
+            
+            let answer=prompt ("Enter a word as an answer") 
+            // prompt the user to put an input
+
+        </script>
+    </body>
+</html>
+
+
