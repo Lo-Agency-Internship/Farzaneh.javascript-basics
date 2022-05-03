@@ -43,3 +43,35 @@ function Sumtwointeger(x, y) {
     }
 }
 console.log(Sumtwointeger(2, 8))
+// =================================
+// part four about Comparisons
+//  1.compute the sum of the two given integers/If the two values are same, then returns triple their sum.
+function Sumtwointeger(x,y){
+    if (x===y){
+        return((x+y)*3)
+    }
+   }
+
+   console.log(Sumtwointeger(1,2))
+
+//    2. absolute difference between a specified number and 19/
+// Returns triple their absolute difference if the specified number is greater than 19.
+function cumputedifference(x){
+    if (x > 19){
+        return ((x-19)*3)
+    }
+} 
+console.log(cumputedifference(20))
+
+//   3.create a new string adding "Lo" in front of a given string. 
+// If the given string begins with "Lo" then return the original string.
+function addstring(userstring){
+    if (userstring.startsWith('Lo')){
+        return(userstring)
+       }
+    else{
+        return ("Lo"+userstring)
+    }
+   }
+   console.log(addstring("Loagancy"));
+   
