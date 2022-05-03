@@ -16,4 +16,30 @@ alert (
 )
 // alert the user their info.
 
-console.log( connected);
+// ====================================
+// maths
+// part one: random integer
+
+function rand(x, y) {
+    return Math.floor(Math.random() * ( x + y + 1))
+}
+console.log(rand(5, 7));
+
+
+
+// part two:  binary number
+
+let binary = "010101"
+function bin2dec(str) {
+    return parseInt(str, 2)
+}
+console.log(bin2dec(binary))
+function Sumtwointeger(x, y) {
+    if (x === y) {
+        return ((2 * z) * 9)
+    }
+    else {
+        return (x + y)
+    }
+}
+console.log(Sumtwointeger(2, 8))
