@@ -74,4 +74,87 @@ function addstring(userstring){
     }
    }
    console.log(addstring("Loagancy"));
-   
+
+// =============================================  logical gates =================
+// Buffer false=> false/////true=>true
+const x=true;
+function logicalGateBuffer(x) {
+  return x;   
+  }
+console.log(logicalGateBuffer(x));
+
+// Inverter false=> true/////true=> false
+const y=true;
+function logicalGateNot(y) {
+  return y;   
+  }
+console.log(logicalGateNot(y));
+
+// AND is like Multiplication 0/1====both True=> true else false
+function logicalGateAnd(x, y)
+{
+  if(x===true & y===true){
+    return true;}
+
+else return false;
+}
+console.log(logicalGateAnd(true,false));
+
+// OR is like sum0/1========both false=> false else true
+function logicalGateOr(x, y)
+{
+  if(x===false || y===false){
+    return false;}
+    else 
+    return true;
+}
+console.log(logicalGateOr(false,false));
+
+// NAND is like an invertion for AND
+function logicalGateNand(n, m)
+{
+  if(n===true & m===true){
+    return false;}
+
+else return true;
+}
+console.log(logicalGateNand(false,true));
+
+// NOR is like an invertion for OR
+function logicalGateNor(n, m)
+{
+  if(n===false & m===false){
+    return true;}
+
+else return false;
+}
+console.log(logicalGateNor(false,false));
+
+// XOR
+function logicalGateXor(a, b)
+{
+  if(a===false & b===false){
+    return false;}
+    else if(a===true & b===true)
+    {
+      return false;
+    }
+else return true;
+}
+console.log(logicalGateXor(false,false));
+
+
+// XNOR
+function logicalGateXnor(a, b)
+{
+  if(a===false & b===false){
+    return true;}
+    else if(a===true & b===true)
+    {
+      return true;
+    }
+      
+
+else return false;
+}
+console.log(logicalGateXnor(false,false));
