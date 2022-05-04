@@ -158,3 +158,45 @@ function logicalGateXnor(a, b)
 else return false;
 }
 console.log(logicalGateXnor(false,false));
+
+
+
+// =====================================LOOPS==================================
+// iterative: which should solve the factorial of x in an iterative way, and
+function factorialIterative(x){
+  if (x > 0){
+    let y= 1;
+    for(let i=1;i <= x;i++){
+      y = y * i
+    }
+    return y
+  }
+  else if (x===0){
+    return 1
+  }
+  else {
+    return "This is incalculable"
+    
+  }
+}
+console.log(factorialIterative(x=5))
+
+
+
+// recursive: which should solve the factorial of x in a recursive way.
+function factorialRecursive(x){
+   if(x >0){
+     let y=1
+     for(let i=1;i <= x;i++){
+      y = i * factorialRecursive(i-1)
+    }
+    return y
+   }
+   else if(x===0){
+     return 1
+   }
+   else{
+     return "This is incalculable"
+   }
+}
+console.log(factorialRecursive(x=6))
